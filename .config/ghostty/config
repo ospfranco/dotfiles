@@ -6,4 +6,4 @@ confirm-close-surface=false
 theme = catppuccin-machiato.conf
 #window-decoration = false
 gtk-titlebar = false
-macos-titlebar-style = hidden
+#macos-titlebar-style = hidden
