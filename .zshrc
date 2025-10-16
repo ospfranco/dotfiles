@@ -31,7 +31,7 @@ eval "$(${HOMEBREW_PREFIX}/bin/mise activate zsh)"
 # Homebrew vars
 export HOMEBREW_DOWNLOAD_CONCURRENCY=auto
 export HOMEBREW_NO_ENV_HINTS=1
-export HOMEBREW_UPDATE_GREEDY=1
+export HOMEBREW_UPGRADE_GREEDY=1
 
 FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 autoload -Uz compinit colors
