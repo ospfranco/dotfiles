@@ -4,6 +4,6 @@ keybind = cmd+r=text:\x21\x21\x0a
 shell-integration = zsh
 confirm-close-surface=false
 theme = catppuccin-machiato.conf
-#window-decoration = false
 gtk-titlebar = false
-#macos-titlebar-style = hidden
+shell-integration-features = ssh-terminfo
+macos-titlebar-style = hidden
