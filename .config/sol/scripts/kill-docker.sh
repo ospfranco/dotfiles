@@ -1,5 +1,7 @@
 #!/bin/bash
-# Stops all running docker containers
+
+# name: Kill Docker
+# icon: 🔪
 
 echo "Killing all running containers"
 docker kill $(docker ps -q)
