@@ -1,0 +1,202 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/.idea": true,
+    "**/build": false,
+    "**/buildAndroid": true,
+    "**/tmp": true,
+    "**/.webpack": true,
+    "**/.bundle": true
+    // "**/vendor": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/node_modules/**": true,
+    "**/tmp": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/tmp": true,
+    "**/*.bundle": true,
+    "**/*.map": true,
+    "**/.webpack": true,
+    "**/target": true
+  },
+  "extensions.autoUpdate": true,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  // "[cpp]": {
+  //   "editor.defaultFormatter": "xaver.clang-format"
+  // },
+  "[swift]": {
+    "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always"
+  },
+  "[zig]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "never"
+    }
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.tabSize": 2,
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.preferredLightColorTheme": "GitHub Light Colorblind (Beta)",
+  "workbench.preferredDarkColorTheme": "Alabaster Dark",
+  "window.autoDetectColorScheme": true,
+  "workbench.layoutControl.enabled": false,
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "editor.formatOnSave": true,
+  "html.format.enable": true,
+  "editor.fontFamily": "'JetBrains Mono', Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.tokenColorCustomizations": {
+    "comments": "#1184ff"
+    // "comments": "#54ff51",
+    // "comments": "#FF8C00",
+  },
+  "workbench.settings.editor": "json",
+  "telemetry.telemetryLevel": "off",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 2,
+  "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": true,
+  "git.openRepositoryInParentFolders": "never",
+  "terminal.integrated.scrollback": 30000,
+  "gitlens.advanced.messages": {
+    "suppressFileNotUnderSourceControlWarning": true
+  },
+  "workbench.enableExperiments": false,
+  "workbench.list.smoothScrolling": true,
+  "workbench.fontAliasing": "auto",
+  "workbench.tips.enabled": false,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "workbench.tree.indent": 18,
+  "cSpell.userWords": [
+    "aarch",
+    "androideabi",
+    "appcast",
+    "ARCHS",
+    "armeabi",
+    "armv",
+    "autogen",
+    "autoreleasing",
+    "bridgeless",
+    "cbindgen",
+    "cctx",
+    "clippy",
+    "clsx",
+    "cocoapod",
+    "cocoapods",
+    "codegen",
+    "codibly",
+    "compat",
+    "dlopen",
+    "dylib",
+    "dylibs",
+    "ETAG",
+    "façade",
+    "fqdb",
+    "hasher",
+    "immer",
+    "jstring",
+    "libc",
+    "libmy",
+    "libsql",
+    "libsqlite",
+    "lipo",
+    "luxon",
+    "mylib",
+    "nativemodule",
+    "nativewind",
+    "oslog",
+    "ospfranco",
+    "podspec",
+    "println",
+    "reqwest",
+    "rowid",
+    "rpath",
+    "runtimes",
+    "rustc",
+    "rustup",
+    "samplesdk",
+    "sqlx",
+    "staticlib",
+    "tailwindcss",
+    "tauri",
+    "tccutil",
+    "thiserror",
+    "tlsn",
+    "trnslcd",
+    "typecheck",
+    "typeorm",
+    "XCFRAMEWORK",
+    "xcodebuild",
+    "xxxs"
+  ],
+  "diffEditor.experimental.showMoves": true,
+  "extensions.ignoreRecommendations": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.minimap.enabled": false,
+  "vim.smartRelativeLine": true,
+  "githubPullRequests.pullBranch": "never",
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.currentLine.scrollable": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.heatmap.locations": [
+    "overview"
+  ],
+  "gitlens.heatmap.fadeLines": false,
+  "gitlens.codeLens.enabled": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "github.copilot.enable": {
+    "*": false
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "chat.commandCenter.enabled": false,
+  "workbench.navigationControl.enabled": false,
+  "rust-analyzer.restartServerOnConfigChange": true,
+  "rust-analyzer.testExplorer": true,
+  "rust-analyzer.inlayHints.bindingModeHints.enable": true,
+  "rust-analyzer.inlayHints.closureCaptureHints.enable": true,
+  "vim.surround": true,
+  "window.commandCenter": false,
+  "vscode_custom_css.imports": [
+    "file:///Users/osp/.vscode/scripts/resize-quickinput-widget.js"
+  ],
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "explorer.confirmPasteNative": false,
+  "workbench.editor.enablePreview": false,
+  "debug.allowBreakpointsEverywhere": true,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
+}

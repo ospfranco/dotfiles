@@ -1,0 +1,10 @@
+background-opacity = 0.95
+background-blur = true
+keybind = cmd+r=text:\x21\x21\x0a
+shell-integration = zsh
+confirm-close-surface=false
+theme = catppuccin-machiato.conf
+shell-integration-features = ssh-terminfo
+window-width = 160
+window-height = 80
+auto-update-channel = tip

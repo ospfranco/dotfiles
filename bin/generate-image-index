@@ -1,0 +1,22 @@
+#!/bin/bash
+# Creates an images.ts with exports of all .jpg files in that directory
+
+rm images.ts 2> /dev/null
+
+shopt -s nullglob
+
+DIR="$1/*"
+
+echo "export const images = {" >> images.ts
+for file in $DIR;
+do
+    # [[ $file =~ \.test\.tsx?$ ]] && continue
+
+    BASE="${file%.*}"
+    BASE=$(basename $BASE)
+
+    
+    echo "$BASE: require(\"$file\")," >> images.ts
+done
+
+echo "}" >> images.ts

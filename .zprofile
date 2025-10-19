@@ -1,0 +1,10 @@
+export NDK_VERSION=26.1.10909125
+export PATH=~/bin:$PATH
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export ANDROID_NDK_HOME=$ANDROID_HOME/ndk/$NDK_VERSION
+export ANDROID_NDK_ROOT=$ANDROID_HOME/ndk/$NDK_VERSION
+export NDK_HOME=$ANDROID_HOME/ndk/$NDK_VERSION
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jbr/Contents/Home

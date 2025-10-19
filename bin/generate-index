@@ -1,0 +1,15 @@
+#!/bin/bash
+# Creates an index.ts with exports of all .ts files in that directory
+
+rm index.ts 2> /dev/null
+
+shopt -s nullglob
+
+for file in *.{tsx,ts};
+do
+    [[ $file =~ \.test\.tsx?$ ]] && continue
+
+    BASE="${file%.*}"
+    echo "export * from './$BASE';" >> index.ts
+done
+
