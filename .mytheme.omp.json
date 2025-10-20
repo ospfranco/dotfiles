@@ -15,7 +15,7 @@
       "segments": [
         {
           "leading_diamond": "\ue0b6",
-          "template": " {{ .UserName }} ",
+          "template": "{{ if eq .OS \"darwin\" }} \uf179 {{ else if eq .OS \"linux\" }} \uf17c {{ end }}{{ .UserName }} ",
           "foreground": "#ffffff",
           "background": "#8FBC8F",
           "type": "session",
