@@ -198,5 +198,7 @@
   },
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
-  }
+  },
+  "githubPullRequests.terminalLinksHandler": "github",
+  "zig.zls.enabled": "on"
 }

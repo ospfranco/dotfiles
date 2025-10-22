@@ -1,6 +1,6 @@
-background-opacity = 0.95
+background-opacity = 0.90
 background-blur = true
-keybind = cmd+r=text:\x21\x21\x0a
+keybind = cmd+r=text:\x21\x21\x0d
 shell-integration = zsh
 confirm-close-surface=false
 theme = catppuccin-machiato.conf
