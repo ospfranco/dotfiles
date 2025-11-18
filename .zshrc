@@ -96,7 +96,13 @@ alias ...='../..'
 alias ....='../../..'
 alias .....='../../../../'
 alias ......='../../../../..'
+alias relinknode='del /usr/local/bin/node && ln -s $(which node) /usr/local/bin'
 
-eval "$(oh-my-posh init zsh --config ~/.mytheme.omp.json)"
+# eval "$(oh-my-posh init zsh --config ~/.mytheme.omp.json)"
+
+setopt prompt_subst
+PROMPT_EOL_MARK=''
+PROMPT='%F{cyan}%n@%m%f %F{magenta}%~%f$(parse_git_branch) %(?.%F{green}➜%f.%F{red}✗%f) '
+RPROMPT='%F{yellow}%*%f'
 
 [[ -s "$HOMEBREW_PREFIX/etc/grc.zsh" ]] && source $HOMEBREW_PREFIX/etc/grc.zsh

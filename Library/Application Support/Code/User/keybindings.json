@@ -19,6 +19,10 @@
     "command": "workbench.action.files.save",
     "when": "isLinux"
   },
+  {
+    "key": "meta+shift+/",
+    "command": "workbench.action.chat.open"
+  }
   // {
   //   "key": "meta+w",
   //   "command": "workbench.action.closeActiveEditor"

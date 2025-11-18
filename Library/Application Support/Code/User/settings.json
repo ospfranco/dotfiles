@@ -26,12 +26,15 @@
     "**/target": true
   },
   "extensions.autoUpdate": true,
+  "[kotlin]": {
+    "editor.defaultFormatter": "fwcd.kotlin"
+  },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
-  // "[cpp]": {
-  //   "editor.defaultFormatter": "xaver.clang-format"
-  // },
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
   "[swift]": {
     "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
   },
@@ -56,7 +59,6 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.preferredLightColorTheme": "GitHub Light Colorblind (Beta)",
-  "workbench.preferredDarkColorTheme": "Alabaster Dark",
   "window.autoDetectColorScheme": true,
   "workbench.layoutControl.enabled": false,
   "workbench.welcomePage.walkthroughs.openOnInstall": false,
@@ -65,7 +67,7 @@
   "editor.fontFamily": "'JetBrains Mono', Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.tokenColorCustomizations": {
-    "comments": "#1184ff"
+    "comments": "#4fa7ea"
     // "comments": "#54ff51",
     // "comments": "#FF8C00",
   },
@@ -78,9 +80,6 @@
   "editor.inlineSuggest.enabled": true,
   "git.openRepositoryInParentFolders": "never",
   "terminal.integrated.scrollback": 30000,
-  "gitlens.advanced.messages": {
-    "suppressFileNotUnderSourceControlWarning": true
-  },
   "workbench.enableExperiments": false,
   "workbench.list.smoothScrolling": true,
   "workbench.fontAliasing": "auto",
@@ -170,9 +169,6 @@
   "github.copilot.enable": {
     "*": false
   },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
   "chat.commandCenter.enabled": false,
   "workbench.navigationControl.enabled": false,
   "rust-analyzer.restartServerOnConfigChange": true,
@@ -181,15 +177,10 @@
   "rust-analyzer.inlayHints.closureCaptureHints.enable": true,
   "vim.surround": true,
   "window.commandCenter": false,
-  "vscode_custom_css.imports": [
-    "file:///Users/osp/.vscode/scripts/resize-quickinput-widget.js"
-  ],
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "explorer.confirmPasteNative": false,
   "workbench.editor.enablePreview": false,
   "debug.allowBreakpointsEverywhere": true,
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "[dockercompose]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
@@ -199,6 +190,14 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "githubPullRequests.terminalLinksHandler": "github",
-  "zig.zls.enabled": "on"
+  // "githubPullRequests.terminalLinksHandler": "github",
+  "zig.zls.enabled": "on",
+  "workbench.preferredDarkColorTheme": "GitHub Dark High Contrast",
+  "clang-format.style": "LLVM",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
