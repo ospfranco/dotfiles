@@ -1,5 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 3,
   "upgrade": {
     "source": "cdn",
     "interval": "168h",
@@ -16,8 +17,8 @@
         {
           "leading_diamond": "\ue0b6",
           "template": "{{ if eq .OS \"darwin\" }} \uf179 {{ else if eq .OS \"linux\" }} \uf17c {{ end }}{{ .UserName }} ",
-          "foreground": "#ffffff",
-          "background": "#8FBC8F",
+          "foreground": "#000",
+          "background": "#bbb",
           "type": "session",
           "style": "diamond"
         },
@@ -92,9 +93,8 @@
       "alignment": "left",
       "newline": true,
       "segments": [],
-      "type": "prompt"
+      "type": "prompt",
+      "force": true
     }
-  ],
-  "version": 3,
-  "final_space": false
+  ]
 }

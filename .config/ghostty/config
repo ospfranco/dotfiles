@@ -1,9 +1,10 @@
-background-opacity = 0.90
-background-blur = true
+# background-opacity = 0.90
+# background-blur = true
 keybind = cmd+r=text:\x21\x21\x0d
 shell-integration = zsh
 confirm-close-surface=false
-theme = catppuccin-machiato.conf
+theme = Electron Highlighter
+background = #222
 shell-integration-features = ssh-terminfo
 window-width = 160
 window-height = 80

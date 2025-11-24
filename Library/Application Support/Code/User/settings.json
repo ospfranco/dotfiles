@@ -199,5 +199,6 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.autoClosingOvertype": "always"
 }
