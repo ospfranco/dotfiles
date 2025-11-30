@@ -65,7 +65,7 @@
   "editor.formatOnSave": true,
   "html.format.enable": true,
   "editor.fontFamily": "'JetBrains Mono', Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
+  // "editor.fontLigatures": true,
   "editor.tokenColorCustomizations": {
     "comments": "#4fa7ea"
     // "comments": "#54ff51",
@@ -192,7 +192,7 @@
   },
   // "githubPullRequests.terminalLinksHandler": "github",
   "zig.zls.enabled": "on",
-  "workbench.preferredDarkColorTheme": "GitHub Dark High Contrast",
+  "workbench.preferredDarkColorTheme": "GitHub Dark",
   "clang-format.style": "LLVM",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -200,5 +200,8 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.autoClosingOvertype": "always"
+  "editor.autoClosingOvertype": "always",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
