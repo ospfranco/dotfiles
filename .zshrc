@@ -18,10 +18,14 @@ gac () {
 source ~/.zsh_secrets
 
 if [[ "$OSTYPE" == darwin* ]]; then
-  # macOS (Apple Silicon default)
+  MACOS=1
+else
+  MACOS=0
+fi
+
+if (( MACOS )); then
   export HOMEBREW_PREFIX="/opt/homebrew"
 else
-  # Linux (common Linuxbrew prefix)
   export HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
 fi
 
@@ -56,7 +60,6 @@ SAVEHIST=$HISTSIZE
 CASE_SENSITIVE="true"
 HISTDUP=erase
 
-
 bindkey '^k' history-search-backward
 bindkey '^j' history-search-forward
 
@@ -90,7 +93,13 @@ alias cev='cd ~/Developer'
 alias co='code .'
 alias l='eza -l -b --icons=always -a --show-symlinks --group-directories-first --smart-group --no-permissions --no-user --no-time'
 alias del='rm -rf'
-alias studio='open -a "Android Studio"'
+
+if (( MACOS )); then
+  alias studio='open -a "Android Studio"'
+else
+  alias studio="/opt/android-studio/android-studio/bin/studio &&"
+fi
+
 alias gtree='git log --all --decorate --oneline --graph'
 alias ...='../..'
 alias ....='../../..'
@@ -98,6 +107,8 @@ alias .....='../../../../'
 alias ......='../../../../..'
 alias relinknode='del /usr/local/bin/node && ln -s $(which node) /usr/local/bin'
 
+# oh-my-posh prompt
+# Sometimes this breaks so the config below is for a simple manual prompt
 eval "$(oh-my-posh init zsh --config ~/.mytheme.omp.json)"
 
 # setopt prompt_subst
@@ -106,3 +117,4 @@ eval "$(oh-my-posh init zsh --config ~/.mytheme.omp.json)"
 # RPROMPT='%F{yellow}%*%f'
 
 [[ -s "$HOMEBREW_PREFIX/etc/grc.zsh" ]] && source $HOMEBREW_PREFIX/etc/grc.zsh
+
