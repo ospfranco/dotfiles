@@ -7,13 +7,13 @@
     "**/buildAndroid": true,
     "**/tmp": true,
     "**/.webpack": true,
-    "**/.bundle": true
+    "**/.bundle": true,
     // "**/vendor": true
   },
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/node_modules/**": true,
-    "**/tmp": true
+    "**/tmp": true,
   },
   "search.exclude": {
     "**/node_modules": true,
@@ -23,33 +23,49 @@
     "**/*.bundle": true,
     "**/*.map": true,
     "**/.webpack": true,
-    "**/target": true
+    "**/target": true,
   },
   "extensions.autoUpdate": true,
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
+  },
   "[kotlin]": {
-    "editor.defaultFormatter": "fwcd.kotlin"
+    "editor.defaultFormatter": "fwcd.kotlin",
   },
   "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
   },
   "[cpp]": {
-    "editor.defaultFormatter": "xaver.clang-format"
+    "editor.defaultFormatter": "xaver.clang-format",
   },
   "[swift]": {
-    "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
+    "editor.defaultFormatter": "vknabel.vscode-apple-swift-format",
   },
   "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
+    "editor.defaultFormatter": "tamasfe.even-better-toml",
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.codeActionsOnSave": {
-    "source.fixAll": "always"
+    "source.fixAll": "always",
   },
   "[zig]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": "never"
-    }
+      "source.fixAll": "never",
+    },
   },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "rubyLsp.formatter": "auto",
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -67,7 +83,7 @@
   "editor.fontFamily": "'JetBrains Mono', Monaco, 'Courier New', monospace",
   // "editor.fontLigatures": true,
   "editor.tokenColorCustomizations": {
-    "comments": "#4fa7ea"
+    "comments": "#4fa7ea",
     // "comments": "#54ff51",
     // "comments": "#FF8C00",
   },
@@ -147,7 +163,7 @@
     "typeorm",
     "XCFRAMEWORK",
     "xcodebuild",
-    "xxxs"
+    "xxxs",
   ],
   "diffEditor.experimental.showMoves": true,
   "extensions.ignoreRecommendations": true,
@@ -158,16 +174,12 @@
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.currentLine.scrollable": false,
   "gitlens.statusBar.enabled": false,
-  "gitlens.heatmap.locations": [
-    "overview"
-  ],
+  "gitlens.heatmap.locations": ["overview"],
   "gitlens.heatmap.fadeLines": false,
   "gitlens.codeLens.enabled": false,
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
+
   "github.copilot.enable": {
-    "*": false
+    "*": false,
   },
   "chat.commandCenter.enabled": false,
   "workbench.navigationControl.enabled": false,
@@ -185,23 +197,14 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
     "editor.autoIndent": "advanced",
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   // "githubPullRequests.terminalLinksHandler": "github",
   "zig.zls.enabled": "on",
   "workbench.preferredDarkColorTheme": "GitHub Dark",
   "clang-format.style": "LLVM",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.autoClosingOvertype": "always",
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
 }
