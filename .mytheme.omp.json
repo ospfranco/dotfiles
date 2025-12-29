@@ -1,6 +1,5 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "version": 3,
   "upgrade": {
     "source": "cdn",
     "interval": "168h",
@@ -12,7 +11,6 @@
     {
       "type": "prompt",
       "alignment": "left",
-      "newline": true,
       "segments": [
         {
           "leading_diamond": "\ue0b6",
@@ -23,10 +21,10 @@
           "style": "diamond"
         },
         {
-          "properties": {
+          "options": {
             "home_icon": "~",
-            "style": "full",
-            "max_depth": 4
+            "max_depth": 4,
+            "style": "full"
           },
           "leading_diamond": "\ue0b6",
           "template": " \uea83  {{ .Path }} ",
@@ -37,7 +35,7 @@
           "style": "powerline"
         },
         {
-          "properties": {
+          "options": {
             "branch_template": "{{ trunc 25 .Branch }}",
             "fetch_status": true,
             "fetch_upstream_icon": true
@@ -58,7 +56,7 @@
           ]
         },
         {
-          "properties": {
+          "options": {
             "fetch_version": true
           },
           "template": " \ue626 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
@@ -69,7 +67,7 @@
           "style": "powerline"
         },
         {
-          "properties": {
+          "options": {
             "fetch_version": true
           },
           "template": " \ue624 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
@@ -87,14 +85,15 @@
           "type": "root",
           "style": "powerline"
         }
-      ]
+      ],
+      "newline": true
     },
     {
+      "type": "prompt",
       "alignment": "left",
       "newline": true,
-      "segments": [],
-      "type": "prompt",
       "force": true
     }
-  ]
+  ],
+  "version": 4
 }

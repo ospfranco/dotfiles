@@ -26,9 +26,9 @@
     "**/target": true,
   },
   "extensions.autoUpdate": true,
-  "[ruby]": {
-    "editor.defaultFormatter": "Shopify.ruby-lsp",
-  },
+  // "[ruby]": {
+  //   "editor.defaultFormatter": "Shopify.ruby-lsp",
+  // },
   "[kotlin]": {
     "editor.defaultFormatter": "fwcd.kotlin",
   },
@@ -57,13 +57,13 @@
     "editor.defaultFormatter": "vscode.html-language-features",
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "biomejs.biome",
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "biomejs.biome",
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "biomejs.biome",
   },
   "rubyLsp.formatter": "auto",
   "workbench.startupEditor": "newUntitledFile",
@@ -207,4 +207,5 @@
   "workbench.preferredDarkColorTheme": "GitHub Dark",
   "clang-format.style": "LLVM",
   "editor.autoClosingOvertype": "always",
+  "biome.suggestInstallingGlobally": false,
 }

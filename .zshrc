@@ -25,6 +25,8 @@ fi
 
 if (( MACOS )); then
   export HOMEBREW_PREFIX="/opt/homebrew"
+
+  ssh-add --apple-load-keychain -q
 else
   export HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
 fi
@@ -74,7 +76,7 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
 
-alias f='open -a Finder ./'                      
+alias f='open -a Finder ./'
 alias psa='ps -A'
 alias psrep='ps -A | grep $1'
 alias hrep='history | grep $1'
@@ -117,4 +119,3 @@ eval "$(oh-my-posh init zsh --config ~/.mytheme.omp.json)"
 # RPROMPT='%F{yellow}%*%f'
 
 [[ -s "$HOMEBREW_PREFIX/etc/grc.zsh" ]] && source $HOMEBREW_PREFIX/etc/grc.zsh
-
