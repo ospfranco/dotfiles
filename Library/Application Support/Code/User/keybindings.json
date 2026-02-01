@@ -18,21 +18,5 @@
     "key": "meta+s",
     "command": "workbench.action.files.save",
     "when": "isLinux"
-  },
-  {
-    "key": "meta+shift+/",
-    "command": "workbench.action.chat.open"
   }
-  // {
-  //   "key": "meta+w",
-  //   "command": "workbench.action.closeActiveEditor"
-  // },
-  // {
-  //   "key": "meta+p",
-  //   "command": "workbench.action.quickOpen"
-  // },
-  // {
-  //   "key": "meta+i",
-  //   "command": "github.copilot.inlineChat"
-  // }
 ]

@@ -1,0 +1,12 @@
+[user]
+name = "Oscar Franco"
+email = "ospfranco@gmail.com"
+
+[ui]
+default-command = "log"
+editor = "nvim"
+diff-formatter = ":git"
+pager = ["delta", "--side-by-side"]
+
+[remotes.origin]
+auto-track-bookmarks = "glob:*"

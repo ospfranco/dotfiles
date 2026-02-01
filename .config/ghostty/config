@@ -3,7 +3,7 @@ background-blur = true
 keybind = cmd+r=text:\x21\x21\x0d
 shell-integration = zsh
 confirm-close-surface=false
-theme = Electron Highlighter
+theme = dark:GitHub Dark Default,light:Catppuccin Latte
 # background = #222
 shell-integration-features = ssh-terminfo
 window-width = 112
@@ -11,3 +11,4 @@ window-height = 66
 # auto-update-channel = tip
 macos-titlebar-style = tabs
 # window-decoration = false
+font-size = 12

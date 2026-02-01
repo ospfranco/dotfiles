@@ -29,9 +29,9 @@
   // "[ruby]": {
   //   "editor.defaultFormatter": "Shopify.ruby-lsp",
   // },
-  "[kotlin]": {
-    "editor.defaultFormatter": "fwcd.kotlin",
-  },
+  // "[kotlin]": {
+  //   "editor.defaultFormatter": "fwcd.kotlin",
+  // },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
   },
@@ -81,6 +81,7 @@
   "editor.formatOnSave": true,
   "html.format.enable": true,
   "editor.fontFamily": "'JetBrains Mono', Monaco, 'Courier New', monospace",
+  // "editor.fontSize": 12,
   // "editor.fontLigatures": true,
   "editor.tokenColorCustomizations": {
     "comments": "#4fa7ea",
@@ -174,10 +175,11 @@
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.currentLine.scrollable": false,
   "gitlens.statusBar.enabled": false,
-  "gitlens.heatmap.locations": ["overview"],
+  "gitlens.heatmap.locations": [
+    "overview"
+  ],
   "gitlens.heatmap.fadeLines": false,
   "gitlens.codeLens.enabled": false,
-
   "github.copilot.enable": {
     "*": false,
   },
@@ -208,4 +210,5 @@
   "clang-format.style": "LLVM",
   "editor.autoClosingOvertype": "always",
   "biome.suggestInstallingGlobally": false,
+  "claudeCode.preferredLocation": "panel",
 }
