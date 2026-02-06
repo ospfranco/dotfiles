@@ -15,8 +15,7 @@
     "**/node_modules/**": true,
     "**/tmp": true,
   },
-  "search.exclude": {
-    "**/node_modules": true,
+  "search.exclude": { "**/node_modules": true,
     "**/.git": true,
     "**/.DS_Store": true,
     "**/tmp": true,
@@ -38,9 +37,9 @@
   "[cpp]": {
     "editor.defaultFormatter": "xaver.clang-format",
   },
-  "[swift]": {
-    "editor.defaultFormatter": "vknabel.vscode-apple-swift-format",
-  },
+  // "[swift]": {
+  //   "editor.defaultFormatter": "vknabel.vscode-apple-swift-format",
+  // },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml",
   },
@@ -168,7 +167,7 @@
   ],
   "diffEditor.experimental.showMoves": true,
   "extensions.ignoreRecommendations": true,
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": true,
   "editor.minimap.enabled": false,
   "vim.smartRelativeLine": true,
   "githubPullRequests.pullBranch": "never",
@@ -211,4 +210,5 @@
   "editor.autoClosingOvertype": "always",
   "biome.suggestInstallingGlobally": false,
   "claudeCode.preferredLocation": "panel",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
 }

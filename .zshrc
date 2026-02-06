@@ -15,6 +15,20 @@ gac () {
   git push --quiet
 }
 
+jjc () {
+  jj commit -m "$1"
+}
+
+jjp () {
+  jj b s "$1" -r @-
+  jj git push
+}
+
+_jjp() {
+  local bookmarks
+  bookmarks=(${(f)"$(jj bookmark list -T 'name ++ "\n"' 2>/dev/null)"})
+  _describe 'bookmark' bookmarks
+}
 source ~/.zsh_secrets
 
 if [[ "$OSTYPE" == darwin* ]]; then
@@ -43,6 +57,7 @@ FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 autoload -Uz compinit colors
 compinit
 colors
+compdef _jjp jjp
 
 # Enable menu selection
 zstyle ':completion:*' menu select
@@ -53,6 +68,8 @@ zstyle ':completion:*:default' list-colors "${(s.:.)LS_COLORS}"
 # Make directory selection distinct
 zstyle ':completion:*:descriptions' format '%F{yellow}-- %d --%f'
 zstyle ':completion:*' group-name ''
+
+
 
 setopt autocd
 
