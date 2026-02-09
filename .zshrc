@@ -20,7 +20,8 @@ jjc () {
 }
 
 jjp () {
-  jj b s "$1" -r @-
+  local bookmark="${1:-$(jj log -r 'ancestors(@-, 10) & bookmarks()' --no-graph -T 'bookmarks.map(|b| b.name()).join("\n")' --limit 1 2>/dev/null)}"
+  jj b s "$bookmark" -r @-
   jj git push
 }
 
@@ -29,6 +30,17 @@ _jjp() {
   bookmarks=(${(f)"$(jj bookmark list -T 'name ++ "\n"' 2>/dev/null)"})
   _describe 'bookmark' bookmarks
 }
+
+jjcp () {
+  jj commit -m "$1"
+  jjp
+}
+
+cev () {
+  cd ~/Developer
+  cd "$1"
+}
+
 source ~/.zsh_secrets
 
 if [[ "$OSTYPE" == darwin* ]]; then
@@ -108,7 +120,6 @@ alias gc='git commit -m'
 alias gd='git diff'
 alias gp='git push'
 alias go='git checkout '
-alias cev='cd ~/Developer'
 alias co='code .'
 alias l='eza -l -b --icons=always -a --show-symlinks --group-directories-first --smart-group --no-permissions --no-user --no-time'
 alias del='rm -rf'

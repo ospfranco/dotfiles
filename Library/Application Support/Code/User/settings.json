@@ -15,7 +15,8 @@
     "**/node_modules/**": true,
     "**/tmp": true,
   },
-  "search.exclude": { "**/node_modules": true,
+  "search.exclude": {
+    "**/node_modules": true,
     "**/.git": true,
     "**/.DS_Store": true,
     "**/tmp": true,
@@ -211,4 +212,13 @@
   "biome.suggestInstallingGlobally": false,
   "claudeCode.preferredLocation": "panel",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "claudeCode.selectedModel": "default",
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://biomejs.dev": true
+  },
 }
