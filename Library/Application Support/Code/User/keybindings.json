@@ -10,11 +10,6 @@
     "when": "inQuickOpen"
   },
   {
-    "key": "space space",
-    "command": "workbench.action.quickOpen",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
-  },
-  {
     "key": "meta+s",
     "command": "workbench.action.files.save",
     "when": "isLinux"

@@ -44,7 +44,7 @@
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml",
   },
-  "typescript.updateImportsOnFileMove.enabled": "always",
+  // "ts.updateImportsOnFileMove.enabled": "always",
   "editor.codeActionsOnSave": {
     "source.fixAll": "always",
   },
@@ -74,7 +74,7 @@
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.preferredLightColorTheme": "GitHub Light Colorblind (Beta)",
+  "workbench.preferredLightColorTheme": "GitHub Light",
   "window.autoDetectColorScheme": true,
   "workbench.layoutControl.enabled": false,
   "workbench.welcomePage.walkthroughs.openOnInstall": false,
@@ -90,7 +90,7 @@
   },
   "workbench.settings.editor": "json",
   "telemetry.telemetryLevel": "off",
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  // "javascript.updateImportsOnFileMove.enabled": "always",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorWidth": 2,
   "editor.suggestSelection": "first",
@@ -224,5 +224,17 @@
   "vim.handleKeys": {
     "<C-w>": false,
     "<C-p>": false
-  }
+  },
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "githubPullRequests.terminalLinksHandler": "github",
+  "chat.tools.terminal.autoApprove": {
+    "cargo check": true
+  },
+  "chat.agent.maxRequests": 100,
+  "chat.agent.thinking.collapsedTools": "withThinking",
+  "chat.agent.thinking.generateTitles": false,
+  "chat.agent.thinkingStyle": "collapsed",
+  "chat.viewSessions.orientation": "stacked",
+  "git.blame.editorDecoration.enabled": true,
 }
