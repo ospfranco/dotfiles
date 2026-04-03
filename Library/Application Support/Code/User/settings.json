@@ -221,4 +221,8 @@
     "https://json-schema.org/": true,
     "https://biomejs.dev": true
   },
+  "vim.handleKeys": {
+    "<C-w>": false,
+    "<C-p>": false
+  }
 }
