@@ -229,7 +229,8 @@
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "githubPullRequests.terminalLinksHandler": "github",
   "chat.tools.terminal.autoApprove": {
-    "cargo check": true
+    "cargo check": true,
+    "mise": true
   },
   "chat.agent.maxRequests": 100,
   "chat.agent.thinking.collapsedTools": "withThinking",
