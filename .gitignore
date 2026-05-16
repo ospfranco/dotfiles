@@ -1,3 +1,4 @@
 .DS_Store
 Library/Application Support/Code
 .config/sol/mmkv*
+.config/sol/images_pasteboard/

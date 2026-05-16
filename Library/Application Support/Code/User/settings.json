@@ -14,6 +14,7 @@
     "**/.git/objects/**": true,
     "**/node_modules/**": true,
     "**/tmp": true,
+    "**/target": true
   },
   "search.exclude": {
     "**/node_modules": true,
@@ -24,6 +25,7 @@
     "**/*.map": true,
     "**/.webpack": true,
     "**/target": true,
+    "**/Cargo.lock": true
   },
   "extensions.autoUpdate": true,
   // "[ruby]": {
@@ -171,7 +173,7 @@
   "diffEditor.ignoreTrimWhitespace": true,
   "editor.minimap.enabled": false,
   "vim.smartRelativeLine": true,
-  "githubPullRequests.pullBranch": "never",
+  "githubPullRequests.pullBranch": "always",
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.currentLine.scrollable": false,
   "gitlens.statusBar.enabled": false,
@@ -190,7 +192,6 @@
   "rust-analyzer.inlayHints.bindingModeHints.enable": true,
   "rust-analyzer.inlayHints.closureCaptureHints.enable": true,
   "vim.surround": true,
-  "window.commandCenter": false,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "explorer.confirmPasteNative": false,
   "workbench.editor.enablePreview": false,
@@ -230,7 +231,8 @@
   "githubPullRequests.terminalLinksHandler": "github",
   "chat.tools.terminal.autoApprove": {
     "cargo check": true,
-    "mise": true
+    "mise": true,
+    "cargo fmt": true
   },
   "chat.agent.maxRequests": 100,
   "chat.agent.thinking.collapsedTools": "withThinking",
@@ -238,5 +240,6 @@
   "chat.agent.thinkingStyle": "collapsed",
   "chat.viewSessions.orientation": "stacked",
   "git.blame.editorDecoration.enabled": true,
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font"
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "workbench.browser.showInTitleBar": false
 }
